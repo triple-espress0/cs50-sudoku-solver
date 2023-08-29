@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+sudoko-solver-venv/
 
 # Spyder project settings
 .spyderproject
