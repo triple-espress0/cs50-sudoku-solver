@@ -1,3 +1,4 @@
+"""Helper functions for the CLI sudoku solver"""
 from dokusan import generators
 
 
@@ -13,7 +14,8 @@ def find_empty_cell(candidates_values_list):
 
 
 def generate_sudoku_list():
-    """Generates random sudoku puzzle and transforms it into list of lists representing each row of the sudoku puzzle"""
+    """Generates random sudoku puzzle and transforms it into list of lists representing
+    each row of the sudoku puzzle"""
     sudoku = str(generators.random_sudoku(avg_rank=150))
     return [[int(i) for i in list(sudoku[j : j + 9])] for j in range(0, 81, 9)]
 
@@ -45,7 +47,8 @@ def get_row_candidates(board, row):
 
 
 def get_candidates(row, column, candidates_values):
-    """Helper function that returns the index of the {x, y}: [] dictionary item from the list of all candidate values"""
+    """Helper function that returns the index of the {x, y}: [] dictionary item from the list
+    of all candidate values"""
     try:
         index = [
             key
@@ -59,7 +62,8 @@ def get_candidates(row, column, candidates_values):
 
 
 def populate_candidate_values(board):
-    """Helper function that generates a list of dictionaries for all possible candidate values of all unassigned sudoku elements"""
+    """Helper function that generates a list of dictionaries for all possible candidate values
+    of all unassigned sudoku elements"""
     candidates_values = [{(i, j): [0]} for i in range(9) for j in range(9)]
     for i in range(9):
         for j in range(9):

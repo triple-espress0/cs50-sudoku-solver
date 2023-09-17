@@ -1,12 +1,14 @@
+"""CLI sudoku solver of randomly generated board"""
+import copy
 from helpers import (
     find_empty_cell,
     get_candidates,
     generate_sudoku_list,
     populate_candidate_values,
 )
-import copy
 
-board = generate_sudoku_list()
+
+input_board = generate_sudoku_list()
 
 
 def solve_board(board):
@@ -42,4 +44,4 @@ def solve_board(board):
     return solutions
 
 
-print(solve_board(board))
+print(solve_board(input_board))
