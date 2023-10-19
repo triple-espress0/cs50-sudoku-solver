@@ -8,7 +8,9 @@ from helpers import (
 )
 
 
+
 input_board = generate_sudoku_list()
+
 
 
 def solve_board(board):
