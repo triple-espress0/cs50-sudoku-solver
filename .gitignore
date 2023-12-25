@@ -163,3 +163,4 @@ cython_debug/
 test.py
 test2.py
 kivy_test.py
+cli_solver.py
