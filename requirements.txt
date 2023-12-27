@@ -1,0 +1,4 @@
+dokusan==0.1.0
+Kivy==2.2.1
+Kivy-Garden==0.1.5
+kivymd==1.1.1
